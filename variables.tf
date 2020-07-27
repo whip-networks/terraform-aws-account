@@ -72,6 +72,11 @@ variable "trail_bucket_default_encryption_key" {
   default     = ""
 }
 
+variable "trail_is_organization_trail" {
+  description = "Defines if the cloudtrail is an AWS Organizations trail"
+  default = false
+}
+
 # tags
 variable "tags" {
   description = "A map of tags to add to all resources"
